@@ -23,6 +23,10 @@ sudo chsh -s /usr/bin/zsh
 # config file
 cp .zshrc ~/.zshrc
 
+# antigen
+mkdir -p ~/.zsh/antigen
+curl -L git.io/antigen > ~/.zsh/antigen/antigen.zsh
+
 # zoxide
 wget https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.2/zoxide-0.9.2-x86_64-unknown-linux-musl.tar.gz -O ~/install/zoxide.tar.gz
 mkdir -p ~/.codespace/bin/zoxide
