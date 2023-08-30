@@ -41,5 +41,9 @@ sudo ln -s ~/.codespace/bin/starship /usr/bin/starship
 # git config
 cp .gitconfig ~/.gitconfig
 
+# man pages
+mkdir -p ~/.codespace/man/man1
+fd '.*\.1' ~/.codespace/bin -x ln -sf {} ~/.codespace/man/man1/{/.}.1
+
 # clean up
 rm -rf ~/install

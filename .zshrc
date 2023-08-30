@@ -1,3 +1,6 @@
+# man pages
+export MANPATH=$(manpath -g):~/.codespace/man
+
 # antigen
 source ~/.zsh/antigen/antigen.zsh
 
