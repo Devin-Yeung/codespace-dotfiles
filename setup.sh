@@ -38,5 +38,8 @@ wget https://github.com/starship/starship/releases/download/v1.16.0/starship-x86
 tar -xvf ~/install/starship.tar.gz -C ~/.codespace/bin
 sudo ln -s ~/.codespace/bin/starship /usr/bin/starship
 
+# git config
+cp .gitconfig ~/.gitconfig
+
 # clean up
 rm -rf ~/install

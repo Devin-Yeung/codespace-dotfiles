@@ -11,3 +11,9 @@ wget 'https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-mu
 mkdir -p ~/.codespace/bin/exa
 unzip ~/install/exa.zip -f -d ~/.codespace/bin/exa
 sudo ln -s ~/.codespace/bin/exa/bin/exa /usr/bin/exa
+
+# difft
+wget 'https://github.com/Wilfred/difftastic/releases/download/0.50.0/difft-x86_64-unknown-linux-gnu.tar.gz' -O ~/install/difft.tar.gz
+mkdir -p ~/.codespace/bin/difft
+tar -xvf ~/install/difft.tar.gz -C ~/.codespace/bin/difft
+sudo ln -s ~/.codespace/bin/difft/difft /usr/bin/difft

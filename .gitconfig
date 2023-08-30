@@ -1,0 +1,16 @@
+[alias]
+	ci = commit
+	co = checkout
+	st = status
+	br = branch
+
+;diff tooling
+[difftool]
+	prompt = false
+
+[difftool "difftastic"]
+	cmd = difft "$LOCAL" "$REMOTE"
+	
+[diff]
+	tool = difftastic
+	external = difft
