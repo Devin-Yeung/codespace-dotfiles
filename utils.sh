@@ -12,6 +12,11 @@ mkdir -p ~/.codespace/bin/exa
 unzip ~/install/exa.zip -f -d ~/.codespace/bin/exa
 sudo ln -s ~/.codespace/bin/exa/bin/exa /usr/bin/exa
 
+# fd
+wget 'https://github.com/sharkdp/fd/releases/download/v8.7.0/fd-v8.7.0-x86_64-unknown-linux-musl.tar.gz' -O ~/install/fd.tar.gz
+tar -xvf ~/install/fd.tar.gz -C ~/.codespace/bin --transform s/fd-.*-unknown-linux-musl/fd/
+sudo ln -s ~/.codespace/bin/fd/fd /usr/bin/fd
+
 # difft
 wget 'https://github.com/Wilfred/difftastic/releases/download/0.50.0/difft-x86_64-unknown-linux-gnu.tar.gz' -O ~/install/difft.tar.gz
 mkdir -p ~/.codespace/bin/difft
