@@ -42,8 +42,10 @@ sudo ln -s ~/.codespace/bin/starship /usr/bin/starship
 cp .gitconfig ~/.gitconfig
 
 # man pages
-mkdir -p ~/.codespace/man/man1
-fd '.*\.1' ~/.codespace/bin -x ln -sf {} ~/.codespace/man/man1/{/.}.1
+for section in 1 3 5 7 8; do
+    mkdir -p ~/.codespace/man/man$section
+    fd ".*\.$section" ~/.codespace/bin -x ln -sf {} ~/.codespace/man/man$section/{/.}.$section
+done
 
 # clean up
 rm -rf ~/install
