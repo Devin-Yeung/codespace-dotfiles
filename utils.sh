@@ -9,7 +9,7 @@ sudo ln -sf ~/.codespace/bin/ripgrep/rg /usr/bin/rg
 # exa
 wget -q 'https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-musl-v0.10.1.zip' -O ~/install/exa.zip
 mkdir -p ~/.codespace/bin/exa
-unzip ~/install/exa.zip -f -d ~/.codespace/bin/exa
+unzip -o -q ~/install/exa.zip -d ~/.codespace/bin/exa
 sudo ln -sf ~/.codespace/bin/exa/bin/exa /usr/bin/exa
 
 # fd
