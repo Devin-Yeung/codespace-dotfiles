@@ -1,11 +1,8 @@
-# setup tmpdir
-mkdir -p ~/install
+# bootstrap
+sh bootstrap.sh
 
-# all binaries are installed into ~/.codespace/bin
-mkdir -p ~/.codespace/bin
-
-# config dir
-mkdir -p ~/.config
+# install utils
+sh utils.sh
 
 # setup nvchad
 git clone https://github.com/NvChad/NvChad.git --depth=1 ~/.config/nvim
