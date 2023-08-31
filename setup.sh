@@ -1,6 +1,6 @@
 #!/bin/sh
 # bootstrap
-sh bootstrap.sh
+sh preinstall.sh
 
 # install utils
 sh utils.sh
