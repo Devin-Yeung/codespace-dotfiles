@@ -37,5 +37,5 @@ sudo ln -s ~/.codespace/bin/zoxide/zoxide /usr/bin/zoxide
 # starship
 wget -q https://github.com/starship/starship/releases/download/v1.16.0/starship-x86_64-unknown-linux-musl.tar.gz -O ~/install/starship.tar.gz
 mkdir -p ~/.codespace/bin/starship
-tar -xf ~/install/starship.tar.gz -C ~/.codespace/bin/sharship
+tar -xf ~/install/starship.tar.gz -C ~/.codespace/bin/starship
 sudo ln -s ~/.codespace/bin/starship/starship /usr/bin/starship
