@@ -1,3 +1,4 @@
+#!/bin/sh
 # install some useful utils
 mkdir -p ~/install
 

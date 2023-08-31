@@ -1,3 +1,4 @@
+#!/bin/sh
 # setup tmpdir
 mkdir -p ~/install
 

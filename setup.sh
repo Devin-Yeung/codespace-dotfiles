@@ -1,3 +1,4 @@
+#!/bin/sh
 # bootstrap
 sh bootstrap.sh
 
