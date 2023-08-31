@@ -9,7 +9,7 @@ concurrency:
   cancel-in-progress: true
 name: CI
 jobs:
-  check-install:
+  shellcheck:
     runs-on: ubuntu-latest
     name: check-installation 
     steps:
