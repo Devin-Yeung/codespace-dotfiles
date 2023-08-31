@@ -7,19 +7,16 @@ on:
 concurrency:
   group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
   cancel-in-progress: true
-name: CI
+name: Check-Install
 jobs:
-  shellcheck:
+  check-install:
     runs-on: ubuntu-latest
-    name: shellcheck 
+    name: check-installation 
     steps:
       - uses: actions/checkout@v3
         with:
           submodules: true
-      - name: Run ShellCheck
-        uses: ludeeus/action-shellcheck@master
-        env:
-          # shellcheck does not support zsh
-          SHELLCHECK_OPTS: -e SC1071
-        with:
-          severity: error
+      - name: Install
+        run: sh setup.sh
+      - name: Check Install
+        run: bash check.sh

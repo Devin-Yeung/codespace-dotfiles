@@ -1,3 +1,4 @@
+#!/bin/zsh
 # man pages
 export MANPATH=$(manpath -g):~/.codespace/man
 
