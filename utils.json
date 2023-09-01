@@ -4,5 +4,32 @@
         "url": "https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz",
         "path": "rg",
         "rename": "ripgrep-*-x86_64-unknown-linux-musl"
+    },
+    {
+        "name": "nvim",
+        "url": "https://github.com/neovim/neovim/releases/download/v0.9.1/nvim-linux64.tar.gz",
+        "path": "bin/nvim",
+        "rename": "nvim-linux64"
+    },
+    {
+        "name": "fd",
+        "url": "https://github.com/sharkdp/fd/releases/download/v8.7.0/fd-v8.7.0-x86_64-unknown-linux-musl.tar.gz",
+        "path": "fd",
+        "rename": "fd-*-unknown-linux-musl"
+    },
+    {
+        "name": "difft",
+        "url": "https://github.com/Wilfred/difftastic/releases/download/0.50.0/difft-x86_64-unknown-linux-gnu.tar.gz",
+        "path": "difft"
+    },
+    {
+        "name": "zoxide",
+        "url": "https://github.com/ajeetdsouza/zoxide/releases/download/v0.9.2/zoxide-0.9.2-x86_64-unknown-linux-musl.tar.gz",
+        "path": "zoxide"
+    },
+    {
+        "name": "starship",
+        "url": "https://github.com/starship/starship/releases/download/v1.16.0/starship-x86_64-unknown-linux-musl.tar.gz",
+        "path": "starship"
     }
 ]
