@@ -24,8 +24,12 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
     wget -q $url -O ~/install/"$name.$ext"
 
     mkdir -p ~/.codespace/bin/"$name"
-    # todo: unzip or tar base on ext
-    tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin/"$name"
+    # unzip base on ext
+    if [ "$ext" = "tar.gz" ]; then
+        tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin/"$name"
+    elif [ "$ext" = "zip" ]; then
+        unzip -o -q ~/install/"$name.$ext" -d ~/.codespace/bin/"$name"
+    fi
 
     # don't peel if field is missing
     pattern=$(jq -r '.peel' <<< $item)
