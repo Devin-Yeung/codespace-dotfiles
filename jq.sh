@@ -28,7 +28,7 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
 
     # dont move if rename is missing
     pattern=$(jq -r '.rename' <<< $item)
-    if [ "$line" != "null" ]; then
+    if [ "$pattern" != "null" ]; then
         from=$(find ~/.codespace/bin -maxdepth 1 -type d -name $pattern)
         to="$(echo ~)"/.codespace/bin/"$name"
         # check if it is the same name before rename
