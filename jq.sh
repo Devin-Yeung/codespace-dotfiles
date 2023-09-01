@@ -23,18 +23,20 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
     ext=$(extension $url)
     wget -q $url -O ~/install/"$name.$ext"
 
+    mkdir -p ~/.codespace/bin/"$name"
     # todo: unzip or tar base on ext
-    tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin
+    tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin/"$name"
 
     # dont move if rename is missing
     pattern=$(jq -r '.rename' <<< $item)
     if [ "$pattern" != "null" ]; then
-        from=$(find ~/.codespace/bin -maxdepth 1 -type d -name $pattern)
-        to="$(echo ~)"/.codespace/bin/"$name"
+        from=$(find ~/.codespace/bin/$name -maxdepth 1 -type d -name $pattern)
+        to="$(echo ~)"/.codespace/bin/$name
         # check if it is the same name before rename
         if [ ! "$from" = "$to" ]; then
             echo "rename $from to $to"
-            mv $from $to
+            mv $from/* $to
+            rm -r $from
         fi
     fi
 
