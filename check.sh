@@ -8,6 +8,7 @@ commands=(
     'difft --version'
     'zoxide --version'
     'starship --version'
+    'lazygit --version'
 )
 
 ret=0
