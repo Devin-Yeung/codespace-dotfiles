@@ -5,6 +5,7 @@ export MANPATH=$(manpath -g):~/.codespace/man
 # useful alias
 alias ls='exa'
 alias lg='lazygit'
+alias pt='poetry'
 
 # antigen
 source ~/.zsh/antigen/antigen.zsh
