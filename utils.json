@@ -36,5 +36,10 @@
         "name": "exa",
         "url": "https://github.com/ogham/exa/releases/download/v0.10.1/exa-linux-x86_64-musl-v0.10.1.zip",
         "path": "bin/exa"
+    },
+    {
+        "name": "lazygit",
+        "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.40.2/lazygit_0.40.2_Linux_x86_64.tar.gz",
+        "path": "lazygit"
     }
 ]
