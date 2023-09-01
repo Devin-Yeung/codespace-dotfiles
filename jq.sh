@@ -26,10 +26,15 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
     # todo: unzip or tar base on ext
     tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin
 
-    # todo: dont move if rename if missing
-    # check if it is same name before rename
+    # dont move if rename is missing
     pattern=$(jq -r '.rename' <<< $item)
-    from=$(find ~/.codespace/bin -maxdepth 1 -type d -name $pattern)
-    to=~/.codespace/bin/"$name"
-    mv $from $to
+    if [ "$line" != "null" ]; then
+        from=$(find ~/.codespace/bin -maxdepth 1 -type d -name $pattern)
+        to="$(echo ~)"/.codespace/bin/"$name"
+        # check if it is the same name before rename
+        if [ ! "$from" = "$to" ]; then
+            echo "rename $from to $to"
+            mv $from $to
+        fi
+    fi
 done
