@@ -11,7 +11,8 @@ git clone https://github.com/NvChad/NvChad.git --depth=1 ~/.config/nvim
 # zsh setup
 
 # use zsh as default
-sudo chsh -s /usr/bin/zsh
+# see https://docs.github.com/en/codespaces/customizing-your-codespace/changing-the-shell-in-a-codespace#setting-the-default-shell-over-ssh
+sudo chsh "$(id -un)" --shell /usr/bin/zsh
 
 # config file
 cp .zshrc ~/.zshrc
