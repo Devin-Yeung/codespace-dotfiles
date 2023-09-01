@@ -37,4 +37,9 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
             mv $from $to
         fi
     fi
+
+    path=$(jq -r '.path' <<< $item)
+    bin=$(basename $path)
+    echo "link ~/.codespace/bin/$name/$path to /usr/bin/$bin"
+    sudo ln -sf ~/.codespace/bin/"$name/$path" /usr/bin/"$bin"
 done
