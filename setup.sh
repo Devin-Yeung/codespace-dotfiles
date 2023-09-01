@@ -3,7 +3,7 @@
 sh preinstall.sh
 
 # install utils
-sh utils.sh
+bash utils.sh
 
 # setup nvchad
 git clone https://github.com/NvChad/NvChad.git --depth=1 ~/.config/nvim
