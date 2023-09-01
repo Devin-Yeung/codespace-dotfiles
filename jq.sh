@@ -27,14 +27,14 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
     # todo: unzip or tar base on ext
     tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin/"$name"
 
-    # dont move if rename is missing
-    pattern=$(jq -r '.rename' <<< $item)
+    # don't peel if field is missing
+    pattern=$(jq -r '.peel' <<< $item)
     if [ "$pattern" != "null" ]; then
         from=$(find ~/.codespace/bin/$name -maxdepth 1 -type d -name $pattern)
         to="$(echo ~)"/.codespace/bin/$name
-        # check if it is the same name before rename
+        # check if it is the same name before peel
         if [ ! "$from" = "$to" ]; then
-            echo "rename $from to $to"
+            echo "peel $from/* to $to"
             mv $from/* $to
             rm -r $from
         fi

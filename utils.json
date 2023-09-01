@@ -3,19 +3,19 @@
         "name": "ripgrep",
         "url": "https://github.com/BurntSushi/ripgrep/releases/download/13.0.0/ripgrep-13.0.0-x86_64-unknown-linux-musl.tar.gz",
         "path": "rg",
-        "rename": "ripgrep-*-x86_64-unknown-linux-musl"
+        "peel": "ripgrep-*-x86_64-unknown-linux-musl"
     },
     {
         "name": "nvim",
         "url": "https://github.com/neovim/neovim/releases/download/v0.9.1/nvim-linux64.tar.gz",
         "path": "bin/nvim",
-        "rename": "nvim-linux64"
+        "peel": "nvim-linux64"
     },
     {
         "name": "fd",
         "url": "https://github.com/sharkdp/fd/releases/download/v8.7.0/fd-v8.7.0-x86_64-unknown-linux-musl.tar.gz",
         "path": "fd",
-        "rename": "fd-*-unknown-linux-musl"
+        "peel": "fd-*-unknown-linux-musl"
     },
     {
         "name": "difft",
