@@ -9,6 +9,7 @@ commands=(
     'zoxide --version'
     'starship --version'
     'lazygit --version'
+    'tmux -V'
 )
 
 ret=0

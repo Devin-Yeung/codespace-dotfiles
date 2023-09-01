@@ -49,3 +49,8 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
     echo "link ~/.codespace/bin/$name/$path to /usr/bin/$bin"
     sudo ln -sf ~/.codespace/bin/"$name/$path" /usr/bin/"$bin"
 done
+
+# tmux
+sudo apt upgrade
+sudo apt update
+sudo apt install tmux -y

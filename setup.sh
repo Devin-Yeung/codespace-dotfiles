@@ -23,6 +23,9 @@ curl -L git.io/antigen > ~/.zsh/antigen/antigen.zsh
 # git config
 cp .gitconfig ~/.gitconfig
 
+# tmux config
+cp .tmux.conf ~/.tmux.conf
+
 # man pages
 for section in 1 3 5 7 8; do
     mkdir -p ~/.codespace/man/man$section
