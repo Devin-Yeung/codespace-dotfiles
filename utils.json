@@ -41,5 +41,11 @@
         "name": "lazygit",
         "url": "https://github.com/jesseduffield/lazygit/releases/download/v0.40.2/lazygit_0.40.2_Linux_x86_64.tar.gz",
         "path": "lazygit"
+    },
+    {
+        "name": "dust",
+        "url": "https://github.com/bootandy/dust/releases/download/v0.8.6/dust-v0.8.6-x86_64-unknown-linux-musl.tar.gz",
+        "path": "dust",
+        "peel": "dust-*-x86_64-unknown-linux-musl"
     }
 ]
