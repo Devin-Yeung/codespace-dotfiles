@@ -4,7 +4,7 @@ extension() {
     # input url
     local url=${1//\"/} # remove the quote if there are
     # List of valid archive extensions
-    local valid=("zip" "tar.gz")
+    local valid=("zip" "tar.gz" "tbz")
 
     for ext in "${valid[@]}"; do
         if [[ "$url" =~ \.$ext$ ]]; then
