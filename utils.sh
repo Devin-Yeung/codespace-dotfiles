@@ -25,7 +25,7 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
 
     mkdir -p ~/.codespace/bin/"$name"
     # unzip base on ext
-    if [ "$ext" = "tar.gz" ]; then
+    if [ "$ext" = "tar.gz" ] || [ "$ext" = "tbz" ]; then
         tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin/"$name"
     elif [ "$ext" = "zip" ]; then
         unzip -o -q ~/install/"$name.$ext" -d ~/.codespace/bin/"$name"
