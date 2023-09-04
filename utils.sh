@@ -21,10 +21,13 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
     url=$(jq -r '.url' <<< $item)
     name=$(jq -r '.name' <<< $item)
     ext=$(extension $url)
+    echo "downlaod $url to" ~/install/$name.$ext
     wget -q $url -O ~/install/"$name.$ext"
 
     mkdir -p ~/.codespace/bin/"$name"
+    echo "create dir" ~/.codespace/bin/"$name"
     # unzip base on ext
+    echo "extract" ~/install/"$name.$ext" "to" ~/.codespace/bin/"$name"
     if [ "$ext" = "tar.gz" ] || [ "$ext" = "tbz" ]; then
         tar -xf ~/install/"$name.$ext" -C ~/.codespace/bin/"$name"
     elif [ "$ext" = "zip" ]; then
