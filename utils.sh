@@ -37,7 +37,7 @@ cat utils.json | jq '.[]' -c | while IFS= read -r item; do
     # don't peel if field is missing
     pattern=$(jq -r '.peel' <<< $item)
     if [ "$pattern" != "null" ]; then
-        from=$(find ~/.codespace/bin/$name -maxdepth 1 -type d -name $pattern)
+        from=$(find ~/.codespace/bin/$name/* -maxdepth 1 -type d -name $pattern)
         to="$(echo ~)"/.codespace/bin/$name
         # check if it is the same name before peel
         if [ ! "$from" = "$to" ]; then
