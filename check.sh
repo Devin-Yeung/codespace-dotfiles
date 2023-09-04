@@ -11,6 +11,7 @@ commands=(
     'lazygit --version'
     'dust --version'
     'tmux -V'
+    'btop --version'
 )
 
 ret=0
