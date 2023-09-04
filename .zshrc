@@ -27,7 +27,13 @@ function zvm_after_init() {
 antigen bundle jeffreytse/zsh-vi-mode
 antigen apply
 
+# init mamba if exists
+if which micromamba &> /dev/null; then
+  eval "$(micromamba shell hook --shell zsh)"
+fi
+
 # starship init
 eval "$(starship init zsh)"
+
 # zoxide init
 eval "$(zoxide init zsh)"
