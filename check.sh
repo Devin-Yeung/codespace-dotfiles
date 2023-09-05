@@ -12,6 +12,7 @@ commands=(
     'dust --version'
     'tmux -V'
     'btop --version'
+    'procs --version'
 )
 
 ret=0
