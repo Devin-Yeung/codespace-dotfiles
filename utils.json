@@ -59,5 +59,10 @@
         "url": "https://github.com/sharkdp/bat/releases/download/v0.23.0/bat-v0.23.0-x86_64-unknown-linux-musl.tar.gz",
         "path": "bat",
         "peel" : "bat-*-x86_64-unknown-linux-musl"
+    },
+    {
+        "name": "procs",
+        "url": "https://github.com/dalance/procs/releases/download/v0.14.0/procs-v0.14.0-x86_64-linux.zip",
+        "path": "procs"
     }
 ]
