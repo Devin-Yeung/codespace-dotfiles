@@ -6,7 +6,7 @@ export MANPATH=$(manpath -g):~/.codespace/man
 alias ls='exa'
 alias lg='lazygit'
 alias pt='poetry'
-alias mamba='micromambar'
+alias mamba='micromamba'
 alias chad='nvim'
 
 # antigen
