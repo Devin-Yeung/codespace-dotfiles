@@ -13,6 +13,17 @@ local plugins = {
     end, -- Override to setup mason-lspconfig
   },
 
+
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function()
+      local opts = require("plugins.configs.cmp")
+      -- I prefer not to select the first one (noselect)
+      opts.completion.completeopt = "menu,menuone,noselect"
+      return opts
+    end,
+  },
+
   -- override plugin configs
   {
     "williamboman/mason.nvim",
