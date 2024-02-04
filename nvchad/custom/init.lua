@@ -5,3 +5,6 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+
+-- I prefer the original leader key
+vim.g.mapleader = "\\"
