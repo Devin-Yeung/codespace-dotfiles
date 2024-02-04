@@ -8,8 +8,8 @@ local plugins = {
   {
     "neovim/nvim-lspconfig",
     config = function()
-      require "plugins.configs.lspconfig"
-      require "custom.configs.lspconfig"
+      require("plugins.configs.lspconfig")
+      require("custom.configs.lspconfig")
     end, -- Override to setup mason-lspconfig
   },
 
@@ -43,7 +43,7 @@ local plugins = {
     --  for users those who want auto-save conform + lazyloading!
     -- event = "BufWritePre"
     config = function()
-      require "custom.configs.conform"
+      require("custom.configs.conform")
     end,
   },
 
