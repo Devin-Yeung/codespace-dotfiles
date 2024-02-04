@@ -11,11 +11,10 @@ M.general = {
         require("conform").format()
       end,
       "formatting",
-    }
-
+    },
   },
   v = {
-    [">"] = { ">gv", "indent"},
+    [">"] = { ">gv", "indent" },
 
     --  format selected line with conform
     ["<leader>fm"] = {
@@ -23,8 +22,7 @@ M.general = {
         require("conform").format()
       end,
       "formatting the selected line",
-    }
-
+    },
   },
 }
 
@@ -54,9 +52,7 @@ M.tabufline = {
       end,
       "Quick fix using lsp",
     },
-
   },
 }
-
 
 return M
