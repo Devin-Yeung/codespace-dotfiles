@@ -16,6 +16,15 @@ M.general = {
   },
   v = {
     [">"] = { ">gv", "indent"},
+
+    --  format selected line with conform
+    ["<leader>fm"] = {
+      function()
+        require("conform").format()
+      end,
+      "formatting the selected line",
+    }
+
   },
 }
 
