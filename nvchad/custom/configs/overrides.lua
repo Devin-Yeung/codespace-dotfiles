@@ -24,22 +24,26 @@ M.treesitter = {
 }
 
 M.mason = {
-  ensure_installed = {
-    -- lua stuff
-    "lua-language-server",
-    "stylua",
+	ensure_installed = {
+		-- rust stuff
+		"rust-analyzer",
+		"rustfmt",
 
-    -- web dev stuff
-    "css-lsp",
-    "html-lsp",
-    "typescript-language-server",
-    "deno",
-    "prettier",
+		-- lua stuff
+		"lua-language-server",
+		"stylua",
 
-    -- c/cpp stuff
-    "clangd",
-    "clang-format",
-  },
+		-- c/cpp stuff
+		"clangd",
+		"clang-format",
+
+		-- web dev stuff
+		-- "css-lsp",
+		-- "html-lsp",
+		-- "typescript-language-server",
+		-- "deno",
+		-- "prettier",
+	},
 }
 
 -- git support in nvimtree
