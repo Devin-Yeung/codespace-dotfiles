@@ -13,7 +13,6 @@ local plugins = {
     end, -- Override to setup mason-lspconfig
   },
 
-
   {
     "hrsh7th/nvim-cmp",
     opts = function()
@@ -27,7 +26,7 @@ local plugins = {
   -- override plugin configs
   {
     "williamboman/mason.nvim",
-    opts = overrides.mason
+    opts = overrides.mason,
   },
 
   {
