@@ -24,10 +24,13 @@ M.treesitter = {
 }
 
 M.mason = {
+  -- Do not install formatters in mason
+  -- Since conform.nvim currently does not support
+  -- https://github.com/stevearc/conform.nvim/issues/104
+  -- or export `~/.local/share/nvim/mason/bin` to the $PATH
 	ensure_installed = {
 		-- rust stuff
 		"rust-analyzer",
-		"rustfmt",
 
 		-- lua stuff
 		"lua-language-server",
