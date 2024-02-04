@@ -7,6 +7,7 @@ bash utils.sh
 
 # setup nvchad
 git clone https://github.com/NvChad/NvChad.git --depth=1 ~/.config/nvim
+ln -sf $(pwd)/nvchad/custom ~/.config/nvim/lua/
 
 # zsh setup
 
