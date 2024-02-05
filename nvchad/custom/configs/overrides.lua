@@ -7,6 +7,7 @@ M.treesitter = {
     "lua",
     "rust",
     "toml",
+    "python",
     "markdown",
     "markdown_inline",
     -- "html",
@@ -42,6 +43,11 @@ M.mason = {
 
     -- shell script
     "shfmt",
+
+    -- python stuff
+    "ruff",
+    "ruff-lsp",
+    "pyright",
 
     -- web dev stuff
     "prettier",
