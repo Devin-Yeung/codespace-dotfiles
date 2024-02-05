@@ -13,6 +13,7 @@ commands=(
     'tmux -V'
     'btop --version'
     'procs --version'
+    'hgrep --version'
 )
 
 ret=0
