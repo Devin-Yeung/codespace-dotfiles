@@ -24,7 +24,7 @@ M.treesitter = {
 }
 
 M.mason = {
-  -- Do not install formatters in mason
+  -- Install formatters in mason MAYNOT work, but currently it seems good.
   -- Since conform.nvim currently does not support
   -- https://github.com/stevearc/conform.nvim/issues/104
   -- or export `~/.local/share/nvim/mason/bin` to the $PATH
@@ -40,12 +40,15 @@ M.mason = {
     "clangd",
     "clang-format",
 
+    -- shell script
+    "shfmt",
+
     -- web dev stuff
+    "prettier",
     -- "css-lsp",
     -- "html-lsp",
     -- "typescript-language-server",
-    -- "deno",
-    -- "prettier",
+    -- "deno"
   },
 }
 

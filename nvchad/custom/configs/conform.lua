@@ -6,6 +6,7 @@ local options = {
     lua = { "stylua" },
     rust = { "rustfmt" },
 
+    json = { "prettier" },
     javascript = { "prettier" },
     css = { "prettier" },
     html = { "prettier" },
