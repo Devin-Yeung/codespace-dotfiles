@@ -68,6 +68,7 @@
   {
     "name": "hgrep",
     "url": "https://github.com/rhysd/hgrep/releases/download/v0.3.4/hgrep-v0.3.4-x86_64-unknown-linux-musl.zip",
-    "path": "hgrep"
+    "path": "hgrep",
+    "peel": "hgrep-*-x86_64-unknown-linux-musl"
   }
 ]
