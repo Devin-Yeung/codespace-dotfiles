@@ -12,6 +12,12 @@ M.general = {
       end,
       "formatting",
     },
+    ["<leader>f"] = {
+      function()
+        vim.diagnostic.open_float({ border = "rounded" })
+      end,
+      "Floating diagnostic",
+    },
   },
   v = {
     [">"] = { ">gv", "indent" },
@@ -52,6 +58,14 @@ M.tabufline = {
       end,
       "Quick fix using lsp",
     },
+  },
+}
+
+M.telescope = {
+  plugin = true,
+
+  n = {
+    ["<leader><leader>"] = { "<cmd> Telescope find_files <CR>", "Find files" },
   },
 }
 
