@@ -23,6 +23,6 @@ jobs:
         run: sh setup.sh
       - name: Verbose output
         run: |
-          exa --tree ~/.codespace/bin/ # list all the binaries
+          exa --tree --level 3 ~/.codespace/bin/ # list all the binaries
       - name: Check Install
         run: bash check.sh
