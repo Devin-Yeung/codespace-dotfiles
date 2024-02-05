@@ -21,5 +21,8 @@ jobs:
           submodules: true
       - name: Install
         run: sh setup.sh
+      - name: Verbose output
+        run: |
+          exa --tree ~/.codespace/bin/ # list all the binaries
       - name: Check Install
         run: bash check.sh
