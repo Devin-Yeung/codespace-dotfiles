@@ -57,6 +57,10 @@ local plugins = {
     end,
   },
 
+  {
+    "lvimuser/lsp-inlayhints.nvim",
+  }
+
   -- To make a plugin not be loaded
   -- {
   --   "NvChad/nvim-colorizer.lua",
