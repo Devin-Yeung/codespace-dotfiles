@@ -10,10 +10,8 @@ for _, lsp in ipairs(servers) do
   lspconfig[lsp].setup({
     on_attach = function(client, bufnr)
       -- https://github.com/mrcjkb/rustaceanvim/discussions/46#discussioncomment-7636177
-      require("lsp-inlayhints").setup() -- any better place ?
       on_attach(client, bufnr)
       require("lsp-inlayhints").on_attach(client, bufnr)
-      require("lsp-inlayhints").show()
     end,
     capabilities = capabilities,
   })
