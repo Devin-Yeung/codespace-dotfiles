@@ -10,7 +10,7 @@
 
 [difftool "difftastic"]
 	cmd = difft "$LOCAL" "$REMOTE"
-	
+
 [diff]
 	tool = difftastic
 	external = difft
