@@ -14,6 +14,7 @@ commands=(
     'btop --version'
     'procs --version'
     'hgrep --version'
+    'rye --version'
 )
 
 ret=0

@@ -13,10 +13,15 @@ cp .tmux.conf ~/.tmux.conf
 # <<<<< tmux <<<<<
 
 
-# >>>>> zsh >>>>>
+# >>>>> git >>>>>
 # git config
 cp .gitconfig ~/.gitconfig
 # <<<<< git <<<<<
+
+
+# >>>>> rye >>>>>
+curl -sSf https://rye-up.com/get | bash
+# <<<<< rye <<<<<
 
 
 # >>>>> zsh >>>>>
