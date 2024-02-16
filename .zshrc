@@ -22,6 +22,10 @@ if [ -d "$HOME/.cargo" ]; then
   source "$HOME/.cargo/env"
 fi
 
+if [ -d "$HOME/.rye/env" ]; then
+  source "$HOME/.rye/env"
+fi
+
 # antigen
 source ~/.zsh/antigen/antigen.zsh
 
