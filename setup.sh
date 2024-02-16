@@ -5,9 +5,9 @@ sh preinstall.sh
 # install utils
 bash utils.sh
 
-# setup nvchad
-git clone https://github.com/NvChad/NvChad.git --depth=1 ~/.config/nvim
-ln -sf $(pwd)/nvchad/custom ~/.config/nvim/lua/
+# install the utils that not directly fetch from github release
+bash oneline.sh
+
 
 # zsh setup
 
@@ -24,9 +24,6 @@ curl -L git.io/antigen > ~/.zsh/antigen/antigen.zsh
 
 # git config
 cp .gitconfig ~/.gitconfig
-
-# tmux config
-cp .tmux.conf ~/.tmux.conf
 
 # man pages
 for section in 1 3 5 7 8; do
