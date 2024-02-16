@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# setup rye env
+source "$HOME/.rye/env"
+
 commands=(
     'nvim --version'
     'rg --version'
