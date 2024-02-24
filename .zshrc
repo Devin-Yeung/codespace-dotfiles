@@ -22,7 +22,7 @@ if [ -d "$HOME/.cargo" ]; then
   source "$HOME/.cargo/env"
 fi
 
-if [ -d "$HOME/.rye/env" ]; then
+if [ -d "$HOME/.rye" ]; then
   source "$HOME/.rye/env"
 fi
 
