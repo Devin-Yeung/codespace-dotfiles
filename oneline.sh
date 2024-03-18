@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # >>>>> nvchad >>>>>
-git clone https://github.com/NvChad/NvChad.git --depth=1 ~/.config/nvim
+git clone https://github.com/NvChad/NvChad.git --branch=v2.0 --depth=1 ~/.config/nvim
 ln -sf $(pwd)/nvchad/custom ~/.config/nvim/lua/
 # <<<<< nvchad <<<<<
 
