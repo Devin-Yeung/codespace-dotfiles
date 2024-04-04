@@ -11,8 +11,12 @@ alias chad='nvim'
 
 # Rust Setup
 function install_rust() {
+  # patching the fish config dir
+  mkdir -p ~/.config/fish/conf.d
   # rust
   curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+  # setup env for rust
+  source "$HOME/.cargo/env"
   # cargo binstall
   curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
 }
