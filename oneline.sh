@@ -23,6 +23,9 @@ cp .gitconfig ~/.gitconfig
 curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" bash
 # <<<<< rye <<<<<
 
+# >>>>> justfile >>>>>
+curl --proto '=https' --tlsv1.2 -sSf https://just.systems/install.sh | sudo bash -s -- --to /usr/bin
+# <<<<< justfile <<<<<
 
 # >>>>> zsh >>>>>
 # use zsh as default
