@@ -20,7 +20,7 @@ cp .gitconfig ~/.gitconfig
 
 
 # >>>>> rye >>>>>
-curl -sSf https://rye-up.com/get | RYE_INSTALL_OPTION="--yes" bash
+curl -sSf https://rye.astral.sh/get | RYE_INSTALL_OPTION="--yes" bash
 # <<<<< rye <<<<<
 
 # >>>>> justfile >>>>>
