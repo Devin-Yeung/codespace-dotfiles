@@ -2,6 +2,8 @@
 
 # install nix
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install linux --no-confirm --init none
+# fix permission, see: https://github.com/DeterminateSystems/nix-installer/issues/777
+sudo chown -R 1000:1000 /nix
 
 # setup tmpdir
 mkdir -p ~/install
