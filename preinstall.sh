@@ -1,12 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 
 # install nix
 curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install linux --no-confirm --init none
 # fix permission, see: https://github.com/DeterminateSystems/nix-installer/issues/777
 sudo chown -R 1000:1000 /nix
+# let's use nix
+. /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
 
 # cache the pkgs that need to be installed
-nix build --no-link ".#full"
+echo "Caching pkgs ... ($(id -u))"
+nix build --no-link .#full
 
 # setup tmpdir
 mkdir -p ~/install
