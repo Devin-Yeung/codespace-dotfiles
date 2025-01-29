@@ -5,6 +5,9 @@ curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix 
 # fix permission, see: https://github.com/DeterminateSystems/nix-installer/issues/777
 sudo chown -R 1000:1000 /nix
 
+# cache the pkgs that need to be installed
+nix build --no-link ".#full"
+
 # setup tmpdir
 mkdir -p ~/install
 

@@ -35,6 +35,7 @@
           jq
           btop
           tmux
+          nixd
         ];
 
       in
@@ -51,6 +52,11 @@
           tools = pkgs.buildEnv {
             name = "common-tools";
             paths = common;
+          };
+
+          full = pkgs.buildEnv {
+            name = "full";
+            paths = languageDevTools.rust ++ common;
           };
 
           # Default package
