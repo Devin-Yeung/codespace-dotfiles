@@ -8,6 +8,7 @@ alias lg='lazygit'
 alias pt='poetry'
 alias mamba='micromamba'
 alias chad='nvim'
+alias ni='nix profile install "$(readlink -f $HOME/.codespace/config)#full"'
 
 # Rust Setup
 function install_rust() {
