@@ -3,7 +3,7 @@
 export MANPATH=$(manpath -g):~/.codespace/man
 
 # useful alias
-alias ls='exa'
+alias ls='eza'
 alias lg='lazygit'
 alias pt='poetry'
 alias mamba='micromamba'

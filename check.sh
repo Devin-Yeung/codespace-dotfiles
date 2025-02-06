@@ -6,7 +6,7 @@ source "$HOME/.rye/env"
 commands=(
     'nvim --version'
     'rg --version'
-    'exa --version'
+    'eza --version'
     'fd --version'
     'difft --version'
     'zoxide --version'
