@@ -17,3 +17,6 @@ done
 
 # clean up
 rm -rf ~/install
+
+# deal with nix in the background
+bash nix.sh &
