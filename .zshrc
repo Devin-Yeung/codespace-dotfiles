@@ -9,7 +9,6 @@ alias pt='poetry'
 alias mamba='micromamba'
 alias chad='nvim'
 alias ni='nix profile install "$(readlink -f $HOME/.codespace/config)#full"'
-alias nix='sudo -i nix'
 
 # Rust Setup
 function install_rust() {
