@@ -6,10 +6,10 @@ All the configs that are used to setup the environment are stored in the `/works
 # Install via Nix
 
 ```bash
-nix profile install "$(readlink -f $HOME/.codespace/config)#full"
+nix profile install "$(readlink -f $HOME/.codespace/config)#<config>"
 # or
 ni
-# a alias to the full command
+# an alias to install the default tools
 ```
 
 > [!IMPORTANT]

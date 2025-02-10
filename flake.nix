@@ -35,7 +35,9 @@
           jq
           btop
           tmux
+          # nix related
           devenv
+          direnv
           nixfmt-rfc-style
           nixd
         ];
