@@ -56,6 +56,10 @@ if which micromamba &> /dev/null; then
   eval "$(micromamba shell hook --shell zsh)"
 fi
 
+if which direnv &> /dev/null; then
+  eval "$(direnv hook zsh)"
+fi
+
 # starship init
 eval "$(starship init zsh)"
 
